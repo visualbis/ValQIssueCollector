@@ -6,11 +6,25 @@ jQuery.ajax({
     dataType: "script"
 });
 
-window.ATL_JQ_PAGE_PROPS =  {
-	"triggerFunction": function(showCollectorDialog) {
-		//Requires that jQuery is available! 
-		$("#newIssue").click(function(e) {
-			e.preventDefault();
-			showCollectorDialog();
-		});
-}};
+window.ATL_JQ_PAGE_PROPS = {
+    "triggerFunction": function (showCollectorDialog) {
+        //Requires that jQuery is available! 
+        $("#newIssue").click(function (e) {
+            e.preventDefault();
+            showCollectorDialog();
+        });
+    }
+};
+
+$(document).ready(function () {
+    $('.statusTrigger').click(function () {
+        $('.overlay').show();
+        $('.status').show();
+    })
+
+    $('.close').click(function () {
+        $('.overlay').hide();
+        $('.status').hide();
+    })
+
+})
