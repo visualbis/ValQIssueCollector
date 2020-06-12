@@ -15,16 +15,3 @@ window.ATL_JQ_PAGE_PROPS = {
         });
     }
 };
-
-// $(document).ready(function () {
-//     $('.statusTrigger').click(function () {
-//         $('.overlay').show();
-//         $('.status').show('slow');
-//     })
-
-//     $('.close').click(function () {
-//         $('.overlay').hide();
-//         $('.status').hide('slow');
-//     })
-
-// })
